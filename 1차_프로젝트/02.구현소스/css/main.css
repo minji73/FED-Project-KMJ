@@ -1,0 +1,7 @@
+@import url(./reset.css);
+/* 상단영역 텍스트 */
+h1{
+    text-align: center;
+    font-size: 150px;
+    font-family: 'Arial', sans-serif;
+}
