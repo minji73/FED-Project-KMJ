@@ -1,26 +1,55 @@
 @charset "utf-8";
-@import url(./reset.css);
+@import url(./reset.css);    
+/* header s */
 .header {
-    padding: 100px 100px 100px 100px;
-    height: 26vh;
-    box-sizing: border-box;
+    height: 30vh;
 }
-/* 상단영역 텍스트 */
-.logo>a{
-    position: relative;
-    display: block;
+.logo {
     width: 100%;
     height: 100%;
 }
-.logo>a>img{
-    position: absolute;
+.logo>a{
+    display: block;
     width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.logo .img-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo .img-box img{
+    position: absolute;
+    height: 100%;
     transition: .3s;
 }
-.logo>a>img:first-child{
+.logo .img-box img.front {
     z-index: 1;
 }
 
-.logo>a:hover img:first-child {
+.logo>a:hover .img-box img.front {
     opacity: 0;
+} 
+/* header e */
+
+/* main exhibition s */
+.section-exhibition{
+    padding-top: 35vw;
 }
+.section-exhibition>h2{
+    font-stretch: condensed;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1;
+   font-size: 40px;
+   padding-left: 80px;
+}
+.section-exhibition>h2>p{
+    color: #8d8d8d;
+}
+/* main exhibition e */

@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>김민지 프로젝트1</title>
-    <!-- 메인 CSS 불러오기 -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <!-- css s -->
+    <link rel="stylesheet" href="./css/main.css" />   <!-- main css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!-- swiper css cdn -->
+    <!-- css e -->
+    <!-- script s -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  <!-- swiper cdn-->
   </head>
   <body>
     <div class="wrapper">
@@ -13,8 +17,10 @@
       <header class="header">
         <h1 class="logo">
           <a href="#" title="홈">
-            <img src="./img/title.svg" alt="타이틀" />
-            <img src="./img/titlepink.svg" alt="타이틀핑크" />
+            <div class="img-box">
+              <img src="./img/title.svg" alt="타이틀" class="front" />
+              <img src="./img/titlepink.svg" alt="타이틀핑크" class="back" />
+            </div>
           </a>
         </h1>
       </header>
@@ -22,18 +28,35 @@
       <main id="main">
         <!-- art -->
         <section class="section art">
-            <div class="art">
-               <img src="./img/art.png" alt="" style="width: 100%; height: 100%;">
-
-            </div>
-            
+          <div class="art">
+            <img src="./img/art.png" alt="" style="width: 100%; height: 100%" />
+          </div>
         </section>
         <!-- exhibition  -->
-        <section class="section exhibition">
-          <h2>What's on<br><br>exhibition</h2>
+        <section class="section-exhibition">
+          <h2>
+            What's on
+            <p>Exhibition</p>
+          </h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
         <!-- stores -->
-        <section class="section stores"></section>
+        <section class="section-stores"></section>
         <section></section>
       </main>
       <!-- footer -->
