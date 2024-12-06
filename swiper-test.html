@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .test-swiper {
+        width: 100vw;
+        height: 100vh;
+      }
+      .test-swiper .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8vw;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- swiper s  -->
+    <div class="swiper test-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">slide1</div>
+        <div class="swiper-slide">slide2</div>
+        <div class="swiper-slide">slide3</div>
+        <div class="swiper-slide">slide4</div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- swiper e -->
+
+    <!-- 스와이퍼 사용법 -->
+    <!-- 
+      1. swiper 기본 구조
+
+      <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+      </div>
+
+      swiper 안에 swiper-wrapper 안에 swiper-slide 클래스만 맞춰지면
+      어떤 태그를 써도 상관없음
+      ul>li, div 다 가능 
+
+      2. 페이지네이션 (불릿)
+      <div class="swiper-pagination"></div> 추가
+
+      3. 화살표 버튼 (왼쪽, 오른쪽)
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> 추가
+
+      4. 스크롤바 (드래그)
+      <div class="swiper-scrollbar"></div> 추가
+      
+    -->   
+  </body>
+  <script>
+    const swiper = new Swiper(".test-swiper", { // 스와이퍼 여러개 쓰는 경우를 대비해서 구분하는 클래스 하나 주기!
+      // Optional parameters
+      direction: "horizontal",  // horizontal > 가로방향드래그, vertical > 세로방향드래그
+      loop: true, // 슬라이드가 끝난 후 처음으로 돌아가면 true, 아니면 false
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: "true", // 불릿 클릭했을 때 넘어가는 거 원하면 true, 아니면 안적어도됨
+      }, // 동그라미 불릿 원하면 추가
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }, // 이전, 다음 버튼 원하면 추가
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: "true" // 드래그 가능하게 하려면 true, 아니면 안적어도됨
+      }, // 스크롤바 원하면 추가
+    });
+  </script>
+</html>

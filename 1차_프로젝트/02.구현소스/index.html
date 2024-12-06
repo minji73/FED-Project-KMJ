@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>김민지 프로젝트1</title>
     <!-- css s -->
-    <link rel="stylesheet" href="./css/main.css" />   <!-- main css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!-- swiper css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- main css -->
+
     <!-- css e -->
     <!-- script s -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  <!-- swiper cdn-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- swiper cdn-->
   </head>
   <body>
     <div class="wrapper">
@@ -34,26 +43,116 @@
         </section>
         <!-- exhibition  -->
         <section class="section-exhibition">
-          <h2>
-            What's on
-            <p>Exhibition</p>
-          </h2>
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+          <div class="ex-slide-wrap">
+            <div class="section-tit">
+              <h2>
+                What's on
+                <p>Exhibition</p>
+              </h2>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- swiper s  -->
+            <div class="swiper ex-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="./img/ex1.jpg" alt="전시1" />
+                  </div>
+                  <div class="text-box">
+                    <div class="title">
+                      <h3>The New Perspective</h3>
+                      <p>2024.12.06-12.21</p>
+                    </div>
+                    <div class="loc">
+                      <span>PEG HANNAM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="./img/ex2.jpg" alt="전시1" />
+                  </div>
+                  <div class="text-box">
+                    <div class="title">
+                      <h3>ETERNAL MOMENTS</h3>
+                      <p>4 Dec - 17 Dec</p>
+                    </div>
+                    <div class="loc">
+                      <span>PEG 한남</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="./img/ex3.jpg" alt="전시1" />
+                  </div>
+                  <div class="text-box">
+                    <div class="title">
+                      <h3>
+                        전시제목이들어갑니다아아아아아아아아아아ㅏ아아아아
+                      </h3>
+                      <p>
+                        설명이들어갑닏아아아아노농나ㅓㅗ노아오ㅓㅏㅇ
+                        ㅗ너ㅏ오나놔노마
+                      </p>
+                    </div>
+                    <div class="loc">
+                      <span>PEG 한남</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="./img/ex4.jpg" alt="전시4" />
+                  </div>
+                  <div class="text-box">
+                    <div class="title">
+                      <h3>The New Perspective</h3>
+                      <p>2024.12.06-12.21</p>
+                    </div>
+                    <div class="loc">
+                      <span>PEG HANNAM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="./img/ex5.jpg" alt="전시5" />
+                  </div>
+                  <div class="text-box">
+                    <div class="title">
+                      <h3>ETERNAL MOMENTS</h3>
+                      <p>4 Dec - 17 Dec</p>
+                    </div>
+                    <div class="loc">
+                      <span>PEG 한남</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <img src="./img/ex6.jpg" alt="전시6" />
+                  </div>
+                  <div class="text-box">
+                    <div class="title">
+                      <h3>
+                        전시제목이들어갑니다아아아아아아아아아아ㅏ아아아아
+                      </h3>
+                      <p>
+                        설명이들어갑닏아아아아노농나ㅓㅗ노아오ㅓㅏㅇ
+                        ㅗ너ㅏ오나놔노마
+                      </p>
+                    </div>
+                    <div class="loc">
+                      <span>PEG 한남</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
+          <!-- swiper e -->
         </section>
         <!-- stores -->
         <section class="section-stores"></section>

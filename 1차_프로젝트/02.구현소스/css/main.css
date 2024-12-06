@@ -41,7 +41,7 @@
 .section-exhibition{
     padding-top: 35vw;
 }
-.section-exhibition>h2{
+.section-exhibition h2{
     font-stretch: condensed;
     font-weight: bold;
     letter-spacing: -0.5px;
@@ -49,7 +49,56 @@
    font-size: 40px;
    padding-left: 80px;
 }
-.section-exhibition>h2>p{
+.section-exhibition h2>p{
     color: #8d8d8d;
 }
+
+.ex-slide-wrap {
+    display: flex;
+}
+
+.section-exhibition .section-tit {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+}
+
+.ex-slide-wrap .section-tit {
+    width: 30%;
+}
+.ex-slide-wrap .ex-slide {
+    width: 70%;
+}
+
+.ex-slide .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.ex-slide .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+    height: 200px;
+}
+
+.ex-slide .title > h3 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.ex-slide .title > p {
+    margin-top: 20px;
+    font-weight: 500;
+
+}
+.loc span {
+    border: 1px solid #000;
+    font-weight: 700;
+    padding: 4px;
+}
+
 /* main exhibition e */
