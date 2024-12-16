@@ -13,6 +13,13 @@
 #main section {
     background-color: #fff;
 }
+.art1{
+    background-image: url(./images/art1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
 /* main exhibition s */
 .section-exhibition{
     padding-top: 35vw;
