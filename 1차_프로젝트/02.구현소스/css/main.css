@@ -15,6 +15,12 @@
 }
 
 /* section art s */
+.section.art {
+    background-image: url('../img/art.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 .art-gallery {
   position: relative;
   height: 100vh;
@@ -23,7 +29,7 @@
   position: absolute;
   transition: 0.3s;
   overflow: hidden;
-  left: 1000px;
+  left: 52%;
   
 }
 .art-gallery .item .desc {
