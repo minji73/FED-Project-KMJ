@@ -14,6 +14,13 @@
     background-color: #fff;
 }
 
+/* section art s */
+.art-gallery {position: relative; height: 100vh;}
+.art-gallery .item {position: absolute;}
+.art-gallery .item .desc {width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: red; color: #fff; opacity: 0; transition: .3s;}
+.art-gallery .item:hover .desc {opacity: 1;}
+/* section art e */
+
 /* main exhibition s */
 .section-exhibition{
     padding-top: 35vw;
