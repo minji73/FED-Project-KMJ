@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url(./reset.css);
 @import url(./layout.css);
+@import url(./art.css);
 @import url(https://db.onlinewebfonts.com/c/74fc282ac1937b053f409b3b70eb1bb6?family=Helvetica+Ultra+Compressed);
 .wrapper {
   padding-bottom: var(--footer-height);
@@ -29,8 +30,7 @@
   position: absolute;
   transition: 0.3s;
   overflow: hidden;
-  left: 52%;
-  
+ 
 }
 .art-gallery .item .desc {
   width: 100%;
@@ -45,7 +45,7 @@
 }
 .art-gallery .item:hover {
   transform: scale(1.1);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .art-gallery .item:hover .desc {
   opacity: 1;

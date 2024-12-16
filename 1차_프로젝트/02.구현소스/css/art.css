@@ -1,0 +1,37 @@
+/* 임시 */
+.item {
+    display: none;
+}
+.item.art7 { /* 보이고싶은작품 숫자만 바꿔주기 */
+    display: block;
+}
+
+
+.art1 {
+left: 60%;
+top: 3%;
+}
+.art2 {
+    left: 78%;
+    top: 3%;
+}
+.art3 {
+    left: 78%;
+    top: 22.5%;
+}
+.art4 {
+    left: 89%;
+    top: 23%;
+}
+.art5 {
+    top: 44%;
+    left: 59.5%;
+}
+.art6 {
+left: 75%;
+top: 40%;
+}
+.art7 {
+    left: 60%;
+    top: 61%;
+}

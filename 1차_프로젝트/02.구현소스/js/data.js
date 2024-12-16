@@ -49,6 +49,56 @@ const artData = [
         title: "제목 10",
         desc: "설명 10"
     },
+    {
+        idx: 11,
+        title: "제목 11",
+        desc: "설명 11"
+    },
+    {
+        idx: 12,
+        title: "제목 12",
+        desc: "설명 12"
+    },
+    {
+        idx: 13,
+        title: "제목 13",
+        desc: "설명 13"
+    },
+    {
+        idx: 14,
+        title: "제목 14",
+        desc: "설명 14"
+    },
+    {
+        idx: 15,
+        title: "제목 15",
+        desc: "설명 15"
+    },
+    {
+        idx: 16,
+        title: "제목 16",
+        desc: "설명 16"
+    },
+    {
+        idx: 17,
+        title: "제목 17",
+        desc: "설명 17"
+    },
+    {
+        idx: 18,
+        title: "제목 18",
+        desc: "설명 18"
+    },
+    {
+        idx: 19,
+        title: "제목 19",
+        desc: "설명 19"
+    },
+    {
+        idx: 20,
+        title: "제목 20",
+        desc: "설명 20"
+    },
 ];
 
 export { artData };
