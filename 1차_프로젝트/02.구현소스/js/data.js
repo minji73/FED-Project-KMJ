@@ -99,6 +99,16 @@ const artData = [
         title: "제목 20",
         desc: "설명 20"
     },
+    {
+        idx: 21,
+        title: "제목 21",
+        desc: "설명 21"
+    },
+    {
+        idx: 22,
+        title: "제목 22",
+        desc: "설명 22"
+    },
 ];
 
 export { artData };
