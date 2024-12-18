@@ -2,7 +2,7 @@
 .item {
     display: none;
 }
-.item.art1 { /* 보이고싶은작품 숫자만 바꿔주기 */
+.item.art12 { /* 보이고싶은작품 숫자만 바꿔주기 */
     display: block;
 }
 
@@ -42,4 +42,40 @@ top: 40%;
 .art9{
     left: 50%;
     top: 78%;
+}
+.art10{
+    left: 47%;
+    top: 56%;
+}
+.art11{
+    left: 45%;
+    top: 30%;
+}
+.art12{
+    left: 29%;
+    top: 10%;
+}
+.art13{
+    
+}
+.art13{
+
+}
+.art13{
+
+}
+.art13{
+
+}
+.art13{
+
+}
+.art13{
+
+}
+.art13{
+
+}
+.art13{
+
 }
