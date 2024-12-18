@@ -1,50 +1,50 @@
 /* 임시 */
-.item {
+/* .item {
     display: none;
-}
-.item.art12 { /* 보이고싶은작품 숫자만 바꿔주기 */
+} */
+/* .item.art20 { /* 보이고싶은작품 숫자만 바꿔주기 
     display: block;
-}
+} */
 
-
+/* 작품위치 CSS */
 .art1 {
-left: 60%;
+left: 55%;
 top: 3%;
 }
 .art2 {
-    left: 78%;
+    left: 69%;
     top: 3%;
 }
 .art3 {
-    left: 78%;
-    top: 22.5%;
+    left: 69%;
+    top: 21%;
 }
 .art4 {
-    left: 89%;
+    left: 78%;
     top: 23%;
 }
 .art5 {
-    top: 44%;
-    left: 59.5%;
+    top: 41%;
+    left: 55%;
 }
 .art6 {
-left: 75%;
+left: 69%;
 top: 40%;
 }
 .art7 {
-    left: 60%;
+    left: 55%;
     top: 61%;
 }
 .art8 {
-    top: 76%;
-    left: 60%;
+    top: 80%;
+    left: 55%;
 }
 .art9{
-    left: 50%;
+    left: 47%;
     top: 78%;
 }
 .art10{
-    left: 47%;
+    left: 45%;
     top: 56%;
 }
 .art11{
@@ -52,30 +52,52 @@ top: 40%;
     top: 30%;
 }
 .art12{
-    left: 29%;
+    left: 40%;
+    top:3%;
+}
+.art12:hover{
+    scale: 1.2;
+}
+
+.art13{
+    top: 1.5%;
+    left: 9%;
+}
+.art14{
+    top: 12%;
+    left: 27%;
+}
+.art15{
+    top: 12%;
+    left: 19%;
+}
+.art16{
     top: 10%;
+    left: 7%;
 }
-.art13{
-    
+.art17{
+    left: 20%;
+    top: 28%;
 }
-.art13{
+.art18{
+    left: 7%;
+    top: 37%;
+}
+.art18:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
 
 }
-.art13{
-
+.art18 .desc{
+    border-radius: 50%;   
 }
-.art13{
-
+.art19{
+    top: 57%;
+    left: 20%;
 }
-.art13{
-
+.art20{
+    top: 85%;
+    left: 43%;
 }
-.art13{
 
-}
-.art13{
-
-}
-.art13{
-
-}
+/*  */

@@ -16,12 +16,12 @@
 }
 
 /* section art s */
-.section.art {
+/* .section.art {
     background-image: url('../img/art.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
+} */
 .art-gallery {
   position: relative;
   height: 100vh;
@@ -35,6 +35,9 @@
 .art-gallery .item .desc {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px; /* 요기를조절해 */
   position: absolute;
   left: 0;
   top: 0;
