@@ -109,6 +109,16 @@ const artData = [
         title: "제목 22",
         desc: "설명 22"
     },
+    {
+        idx: 23,
+        title: "제목 23",
+        desc: "설명 23"
+    },
+    {
+        idx: 24,
+        title: "제목 24",
+        desc: "설명 24"
+    },
 ];
 
 export { artData };
