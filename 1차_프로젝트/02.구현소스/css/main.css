@@ -307,3 +307,72 @@ body.apricot #main section {
 }
 
 /* stores e */
+
+/* popup 1 s */
+
+.popup1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60vh;
+  background-color: #fff;
+  z-index: 10;
+  overflow: auto;
+}
+.ptop{
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 48px;
+  padding: 0 16px;
+  align-items: center;
+}
+.ptop .close{
+  width: 24px;
+  height: 24px;
+
+}
+.popup1 .contents{
+  padding: 0 48px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  width: 80%;
+}
+.popup1 .left{
+  width: calc(40% - 24px);
+
+}
+.popup1 .img img {
+  width: 100%;
+}
+.popup1 .right{
+  width: calc(60% - 24px);
+
+}
+.popup1 .right h3{
+  font-size: 68px;
+  font-family: "Helvetica Ultra Compressed";
+  text-transform: uppercase;
+}
+.popup1 .right button{
+  display: flex;
+  align-items: center;
+  font-stretch: condensed;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 700;
+    gap: 8px;
+    
+}
+.popup1 .right h4{
+  font-size: 24px;
+  font-family: "Helvetica Ultra Compressed";
+}
+/* popup 1 e */
