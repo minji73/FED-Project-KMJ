@@ -59,4 +59,23 @@ $(() => {
   // 옵저버 전체를 해제합니다.
   // io.disconnect();
 
+  // 팝업
+  // 1. 대상선정
+  // .popup1, .popup1 .close, .card-list>li
+  // let -> 값이 변할때
+  // const -> 값이 변하지 않을때
+  const $popup1 = $(".popup1"); // 팝업
+  const $card = $(".card-list>li"); // 카드 (열기)
+  const $btnClose = $(".popup1 .close"); // 닫기버튼 (닫기)
+
+  // 2. 이벤트
+  $card.click(function(){
+    // 클릭했을 때 실행될 코드
+    $popup1.addClass("open");
+  });
+
+  $btnClose.click(function(){
+    // 클릭했을 때 실행될 코드
+    $popup1.removeClass("open");
+  });
 });

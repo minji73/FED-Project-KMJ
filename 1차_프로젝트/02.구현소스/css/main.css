@@ -318,6 +318,11 @@ body.apricot #main section {
   background-color: #fff;
   z-index: 10;
   overflow: auto;
+  translate: 0 100%;
+  transition: .5s;
+}
+.popup1.open{
+  translate: 0 0;
 }
 .ptop {
   position: sticky;
