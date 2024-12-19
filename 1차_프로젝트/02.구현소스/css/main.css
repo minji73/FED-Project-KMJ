@@ -30,7 +30,6 @@
   position: absolute;
   transition: 0.3s;
   overflow: hidden;
- 
 }
 
 .art-gallery .item img {
@@ -218,7 +217,7 @@
   transform: rotate(-12deg) translateX(calc(-100% - 32px)) translateY(-18%);
 }
 .card-list.on > li:nth-child(1),
-.card-list.on > li:nth-child(3){
+.card-list.on > li:nth-child(3) {
   transform: rotate(0) translateX(0);
 }
 /* vote e */
@@ -320,7 +319,7 @@ body.apricot #main section {
   z-index: 10;
   overflow: auto;
 }
-.ptop{
+.ptop {
   position: sticky;
   left: 0;
   top: 0;
@@ -330,12 +329,11 @@ body.apricot #main section {
   padding: 0 16px;
   align-items: center;
 }
-.ptop .close{
+.ptop .close {
   width: 24px;
   height: 24px;
-
 }
-.popup1 .contents{
+.popup1 .contents {
   padding: 0 48px;
   margin: 0 auto;
   display: flex;
@@ -343,36 +341,45 @@ body.apricot #main section {
   justify-content: space-between;
   width: 80%;
 }
-.popup1 .left{
+.popup1 .left {
   width: calc(40% - 24px);
-
 }
 .popup1 .img img {
   width: 100%;
 }
-.popup1 .right{
+.popup1 .right {
   width: calc(60% - 24px);
-
 }
-.popup1 .right h3{
+.popup1 .right h3 {
   font-size: 68px;
   font-family: "Helvetica Ultra Compressed";
   text-transform: uppercase;
+  margin: 0 0 20px;
 }
-.popup1 .right button{
+.popup1 .right button {
   display: flex;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-stretch: condensed;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    line-height: 1;
-    font-size: 24px;
-    font-weight: 700;
-    gap: 8px;
-    
+  font-size: 30px;
+  gap: 8px;
 }
-.popup1 .right h4{
+.popup1 .right h4 {
   font-size: 24px;
-  font-family: "Helvetica Ultra Compressed";
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-stretch: condensed;
+}
+.popup1 .text-box{
+  margin-top: 50px;
+  line-height: 25px;
+}
+.popup1 .text-box p {
+  font-size: 16px;
 }
 /* popup 1 e */
+
+
+
+
