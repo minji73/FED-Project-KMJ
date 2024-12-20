@@ -319,9 +319,9 @@ body.apricot #main section {
   z-index: 10;
   overflow: auto;
   translate: 0 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
-.popup1.open{
+.popup1.open {
   translate: 0 0;
 }
 .ptop {
@@ -346,7 +346,8 @@ body.apricot #main section {
   justify-content: space-between;
   width: 80%;
 }
-.popup1 strong, .popup1 em {
+.popup1 strong,
+.popup1 em {
   font-weight: 700;
 }
 .popup1 .left {
@@ -379,7 +380,7 @@ body.apricot #main section {
   font-weight: bold;
   font-stretch: condensed;
 }
-.popup1 .text-box{
+.popup1 .text-box {
   margin-top: 50px;
   line-height: 25px;
 }
@@ -396,11 +397,11 @@ body.apricot #main section {
 .popup1 .info {
   margin-top: 20px;
 }
-.popup1 .info>li {
+.popup1 .info > li {
   display: flex;
   justify-content: space-between;
 }
-.popup1 .info>li:not(:first-child) {
+.popup1 .info > li:not(:first-child) {
   padding-top: 10px;
 }
 
@@ -410,23 +411,30 @@ body.apricot #main section {
 /* popup 1 e */
 
 /* popup2 s */
-  .popup2 {
-    display: none;
-    width: 768px;
-    height: 660px;
-    background-color: #ff69c2;
-  }
-  .popup2 .ptop{
-    justify-content: flex-start;
-    padding: 24px;
-    height: auto;
-  }
-  .popup2 .ptop .close{
-    width: 32px;
-    height: 32px;
-  }
+.popup2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 768px;
+  height: 660px;
+  background-color: #ff69c2;
+  translate: 0 100%;
+  transition: 0.5s;
+}
+.popup2.open {
+  translate: 0 0;
+}
+.popup2 .ptop {
+  justify-content: flex-start;
+  padding: 24px;
+  height: auto;
+}
+.popup2 .ptop .close {
+  width: 32px;
+  height: 32px;
+}
+.popup2 .contents {
+  padding: 0 96px;
+}
 
 /* popup2 e */
-
-
-

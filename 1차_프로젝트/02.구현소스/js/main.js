@@ -67,7 +67,7 @@ $(() => {
   // const -> 값이 변하지 않을때
   const $popup1 = $(".popup1"); // 팝업
   const $card = $(".card-list>li"); // 카드 (열기)
-  const $btnClose = $(".popup1 .close"); // 닫기버튼 (닫기)
+  const $pop1Close = $(".close"); // 닫기버튼 (닫기)
 
   
 
@@ -87,8 +87,27 @@ $(() => {
     $(".img>img").attr("src", `./img/vote${idx+1}.png`); 
   });
 
-  $btnClose.click(function(){
+  $pop1Close.click(function(){
     // 클릭했을 때 실행될 코드
     $popup1.removeClass("open");
+  });
+
+
+  // 팝업2
+  // 1. 대상선정
+  // .popup1, .popup1 .close, .card-list>li
+  // let -> 값이 변할때
+  // const -> 값이 변하지 않을때
+  const $popup2 = $(".popup2"); // 팝업
+  const $newletter = $(".newsletter"); // 카드 (열기)
+  const $pop2Close = $(".popup2 .close");
+  $newletter.click(function(){
+    // 클릭했을 때 실행될 코드
+    $popup2.addClass("open");
+  });
+
+  $pop2Close.click(function(){
+    // 클릭했을 때 실행될 코드
+    $popup2.removeClass("open");
   });
 });
