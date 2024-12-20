@@ -1,3 +1,4 @@
+// art section data
 const artData = [
     {
         idx: 1,
@@ -122,5 +123,10 @@ const artData = [
         desc: "설명 24"
     },
 ];
+
+// vote section data
+const voteData = [
+    
+]
 
 export { artData };

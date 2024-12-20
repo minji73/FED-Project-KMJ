@@ -6,6 +6,11 @@
     display: block;
 } */
 
+/* 공통 */
+.art-gallery .item{
+    
+}
+
 /* 작품위치 CSS */
 .art1 {
 left: 55%;
