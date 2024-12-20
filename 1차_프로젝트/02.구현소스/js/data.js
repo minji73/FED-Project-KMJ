@@ -2,7 +2,9 @@ const artData = [
     {
         idx: 1,
         title: "제목 1",
-        desc: "설명 1"
+        desc: "설명 1",
+        bgColor: "red",
+        attr: "art1.html"
     },
     {
         idx: 2,

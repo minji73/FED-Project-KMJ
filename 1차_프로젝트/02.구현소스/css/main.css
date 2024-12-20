@@ -44,7 +44,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: red;
+  background-color: #000000;
   color: #fff;
   opacity: 0;
   transition: 0.3s;
