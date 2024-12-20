@@ -1,3 +1,4 @@
+import { voteData } from "./data.js";
 // exhibition swiper js
 $(() => {
   // exhibition swiper
@@ -68,10 +69,22 @@ $(() => {
   const $card = $(".card-list>li"); // 카드 (열기)
   const $btnClose = $(".popup1 .close"); // 닫기버튼 (닫기)
 
+  
+
   // 2. 이벤트
   $card.click(function(){
     // 클릭했을 때 실행될 코드
     $popup1.addClass("open");
+    let idx = $(this).index();
+    
+    $(".popup1 .artist").text(voteData[idx].artist);
+    $(".popup1 .name").text(voteData[idx].name);
+    $(".popup1 .size").text(voteData[idx].size);
+    $(".popup1 .method").text(voteData[idx].method);
+    $(".popup1 .material").text(voteData[idx].material);
+    $(".popup1 .edition").text(voteData[idx].edition);
+    $(".popup1 .explain").text(voteData[idx].explain);
+    $(".img>img").attr("src", `./img/vote${idx+1}.png`); 
   });
 
   $btnClose.click(function(){

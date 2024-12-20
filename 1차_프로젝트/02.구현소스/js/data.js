@@ -126,7 +126,33 @@ const artData = [
 
 // vote section data
 const voteData = [
-    
+    {
+        artist: "Jean-Paul Agosti",
+        name: "MEDITATIO",
+        size: "Image 100x100(cm)",
+        method: "Pigment printing",
+        material: "Acrylic",
+        edition: "Limited edition 99",
+        explain: "The work of Jean-Paul Agosti begins with taking photographs, and then a portion of those photographs is enlarged and replaced with painting. The subjects of the photographs he captures are very consistent, including gardens, forests, and trees reflected in water. As the photograph is transformed into a painting, the colors and forms undergo changes according to the artist's subjective interpretation, forming a new world. (Excerpt from the artist introduction in the Lee Eungno Museum, Lee Yung-se & Jean-Paul Agosti joint exhibition)"
+    },
+    {
+        artist: "Jean-Paul Agosti",
+        name: "MEDITATIO",
+        size: "Image 100x100(cm)",
+        method: "Pigment printing",
+        material: "Acrylic",
+        edition: "Limited edition 99",
+        explain: "test"
+    },
+    {
+        artist: "Jean-Paul Agosti",
+        name: "MEDITATIO",
+        size: "Image 100x100(cm)",
+        method: "Pigment printing",
+        material: "Acrylic",
+        edition: "Limited edition 99",
+        explain: "test2"
+    },
 ]
 
-export { artData };
+export { artData, voteData };
