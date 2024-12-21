@@ -45,8 +45,8 @@ const artData = [
   },
   {
     idx: 8,
-    title: "제목 8",
-    desc: "설명 8",
+    title: "David Shrigley",
+    desc: "shit",
     bgColor: "#86003e", 
   },
   {
