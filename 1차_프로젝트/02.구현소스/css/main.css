@@ -436,5 +436,19 @@ body.apricot #main section {
 .popup2 .contents {
   padding: 0 96px;
 }
+.popup2 h3{
+  font-size: 120px;
+  font-family: "Helvetica Ultra Compressed";
+  text-transform: uppercase;
 
+}
+.popup2 p{
+  margin: 40px 0;
+}
+.popup2 .submit{
+  margin-top: 60px;
+  font-size: 60px;
+  font-family: "Helvetica Ultra Compressed";
+  text-decoration: underline;
+}
 /* popup2 e */

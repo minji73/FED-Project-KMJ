@@ -8,7 +8,12 @@
 
 /* 공통 */
 .art-gallery .item{
-    
+    font-size: 25px;
+    font-weight: 500;
+}
+.art-gallery .item p{
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 /* 작품위치 CSS */
@@ -24,10 +29,14 @@ top: 3%;
     left: 69%;
     top: 21%;
 }
+.art3 span {
+    font-size: 20px;
+}
 .art4 {
     left: 78%;
     top: 23%;
 }
+
 .art5 {
     top: 41%;
     left: 55%;
@@ -40,6 +49,9 @@ top: 40%;
     left: 55%;
     top: 59%;
 }
+.art7 span{
+    font-size: 16px;
+}
 .art8 {
     top: 75%;
     left: 55%;
@@ -48,38 +60,73 @@ top: 40%;
     left: 47%;
     top: 78%;
 }
+.art9 span{
+    font-size: 20px;
+}
 .art10{
     left: 46%;
     top: 56%;
 }
+.art10 span {
+    font-size: 18px;
+}
 .art11{
     left: 45%;
     top: 31%;
+}
+.art11 p{
+    font-size: 23px;
+}
+.art11 span{
+    font-size: 21px;
 }
 .art12{
     left: 34%;
     top: 2%;
 }
 .art12:hover{
-    scale: 1.2;
+    scale: 1.4;
 }
-
+.art12 span{
+    font-size: 18px;
+}
+.art12 p{
+    font-size: 18px;
+}
 .art13{
     top: 3%;
     left: 11%;
     scale: 1.2;
 }
+.art13 p{
+    font-size: 18px;
+}
+.art13 span{
+    font-size: 16px;
+}
 .art14{
     top: 13%;
     left: 27%;
+}
+.art14 span{
+    font-size: 18px;
 }
 .art15{
     top: 12%;
     left: 19%;
 }
+.art p{
+    font-size: 22px;
+}
+.art15 span{
+    font-size: 18px;
+}
 .art16{
     top: 27%;
     left: 16%;
+}
+.art16 span{
+    font-size: 17px;
 }
 .art17{
     left: 25%;
@@ -104,6 +151,15 @@ top: 40%;
 .art20{
     top: 80%;
     left: 40%;
+}
+.art20:hover{
+    scale: 1.25;
+}
+.art20 p{
+    font-size: 15px;
+}
+.art20 span{
+    font-size: 14px;
 }
 .art21{
     top: 12.5%;
