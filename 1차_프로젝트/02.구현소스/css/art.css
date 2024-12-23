@@ -143,8 +143,9 @@ top: 40%;
     border-radius: 50%;
 
 }
-.art18 .desc{
+.art-gallery .item.art18 .desc{
     border-radius: 50%;
+    padding-left: 38px;
 }
 .art19{
     top: 56%;

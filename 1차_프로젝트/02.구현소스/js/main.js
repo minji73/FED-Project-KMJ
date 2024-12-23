@@ -110,4 +110,9 @@ $(() => {
     // 클릭했을 때 실행될 코드
     $popup2.removeClass("open");
   });
+
+  $(".popup2 .submit").click(() => {
+    alert("submit success!");
+    $popup2.removeClass("open");
+  });
 });
