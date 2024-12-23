@@ -87,11 +87,12 @@ top: 40%;
 .art12:hover{
     scale: 1.4;
 }
-.art12 span{
+.art .art12 p{
+    margin-top: -8px;
     font-size: 18px;
 }
-.art12 p{
-    font-size: 18px;
+.art .art12 span{
+    font-size: 16px;
 }
 .art13{
     top: 3%;
@@ -99,6 +100,7 @@ top: 40%;
     scale: 1.2;
 }
 .art13 p{
+    margin-top: -7px;
     font-size: 18px;
 }
 .art13 span{
@@ -178,6 +180,9 @@ top: 40%;
     top: 5%;
     left: 40%;
     width: 240px;
+}
+.art24 p{
+    font-size: 28px;
 }
 
 /* 호버시 */

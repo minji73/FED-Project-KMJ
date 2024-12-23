@@ -29,7 +29,7 @@ const artData = [
     idx: 5,
     title: "David Shrigley",
     desc: "Curious Foot",
-    bgColor: "#ecd8c5",
+    bgColor: "#c09783",
   },
   {
     idx: 6,
@@ -101,7 +101,7 @@ const artData = [
     idx: 17,
     title: "Woo Inyoung",
     desc: "Blooming-Everything, P2204, 2022",
-    bgColor: "#d7eb25",
+    bgColor: "#c0dd13",
   },
   {
     idx: 18,
@@ -143,7 +143,7 @@ const artData = [
     idx: 24,
     title: "Moon Hyeongtae",
     desc: "Mask Dance",
-    bgColor: "black",
+    bgColor: "#290200",
   },
 ];
 

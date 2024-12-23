@@ -84,7 +84,7 @@ $(() => {
     $(".popup1 .material").text(voteData[idx].material);
     $(".popup1 .edition").text(voteData[idx].edition);
     $(".popup1 .explain").text(voteData[idx].explain);
-    $(".img>img").attr("src", `./img/vote${idx+1}.png`); 
+    $(".card-list .img>img").attr("src", `./img/vote${idx+1}.png`); 
   });
 
   $pop1Close.click(function(){
