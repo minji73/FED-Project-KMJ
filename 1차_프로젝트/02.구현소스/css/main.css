@@ -476,6 +476,9 @@ input:focus-visible, input:focus {
   border-radius: .125rem;
   outline: 4px solid #fff;
 }
+input:valid {
+  background: none !important;
+}
 ::placeholder {
   color: rgba(0,0,0,0.3);
 }

@@ -112,7 +112,15 @@ $(() => {
   });
 
   $(".popup2 .submit").click(() => {
-    alert("submit success!");
-    $popup2.removeClass("open");
+    let $firstName = $("#firstName").val(),
+      $lastName = $("#lastName").val(),
+      $email = $("#email").val();
+    
+      if($firstName == "" || $lastName == "" || $email == "") {
+        alert("Please fill out the fields")
+      } else {
+        alert("Submit Success!");
+        $popup2.removeClass("open");
+      }
   });
 });

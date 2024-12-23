@@ -305,9 +305,16 @@
               <br>MAILING LIST</h3>
             <p>Receive emails from our team to keep up to date and inspired.</p>
             <div class="input-area">
-              <div class="input"><input type="text" placeholder="First Name * "></div>
-              <div class="input"><input type="text" placeholder="Last Name"></div>
-              <div class="input"><input type="email" placeholder="your@email.com * "></div>
+              <div class="form">
+                <form action="abc.php">
+                  <fieldset>
+                    <legend style="display: none;">뉴스레터 폼</legend>
+                    <div class="input"><input type="text" id="firstName" placeholder="First Name * "></div>
+                    <div class="input"><input type="text" id="lastName" placeholder="Last Name"></div>
+                    <div class="input"><input type="email" id="email" placeholder="your@email.com * "></div>
+                  </fieldset>
+                </form>
+              </div>
             </div>
             <button class="submit">Sign me up!</button>
           </div>
