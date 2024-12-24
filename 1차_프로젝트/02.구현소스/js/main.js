@@ -76,6 +76,7 @@ $(() => {
     // 클릭했을 때 실행될 코드
     $popup1.addClass("open");
     let idx = $(this).index();
+    console.log(idx);
     
     $(".popup1 .artist").text(voteData[idx].artist);
     $(".popup1 .name").text(voteData[idx].name);
@@ -84,12 +85,16 @@ $(() => {
     $(".popup1 .material").text(voteData[idx].material);
     $(".popup1 .edition").text(voteData[idx].edition);
     $(".popup1 .explain").text(voteData[idx].explain);
-    $(".card-list .img>img").attr("src", `./img/vote${idx+1}.png`); 
+    $(".popup1 .img>img").attr("src", `./img/vote${idx+1}.png`); 
+    $(".overlay").addClass("on");
+    $("body").css({overflow: "hidden"});
   });
 
   $pop1Close.click(function(){
     // 클릭했을 때 실행될 코드
     $popup1.removeClass("open");
+    $(".overlay").removeClass("on");
+    $("body").css({overflow: "visible"});
   });
 
 
