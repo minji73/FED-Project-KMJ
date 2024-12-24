@@ -86,7 +86,7 @@ $(() => {
     $(".popup1 .edition").text(voteData[idx].edition);
     $(".popup1 .explain").text(voteData[idx].explain);
     $(".popup1 .img>img").attr("src", `./img/vote${idx+1}.png`); 
-    $(".overlay").addClass("on");
+    $(".overlay").addClass("on").click(()=>{$pop1Close.trigger('click')});
     $("body").css({overflow: "hidden"});
   });
 
@@ -106,9 +106,12 @@ $(() => {
   const $popup2 = $(".popup2"); // 팝업
   const $newletter = $(".newsletter"); // 카드 (열기)
   const $pop2Close = $(".popup2 .close");
+  
   $newletter.click(function(){
     // 클릭했을 때 실행될 코드
     $popup2.addClass("open");
+    $(".overlay").addClass("on").click(()=>{$pop1Close.trigger('click')});
+    $("body").css({overflow: "hidden"});
   });
 
   $pop2Close.click(function(){
@@ -126,6 +129,7 @@ $(() => {
       } else {
         alert("Submit Success!");
         $popup2.removeClass("open");
+
       }
   });
 });

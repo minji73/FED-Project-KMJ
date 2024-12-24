@@ -434,6 +434,7 @@ body.apricot #main section {
   background-color: #ff69c2;
   translate: 0 100%;
   transition: 0.5s;
+  z-index: 2;
 }
 .popup2.open {
   translate: 0 0;
