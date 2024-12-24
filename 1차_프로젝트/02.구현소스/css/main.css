@@ -92,6 +92,8 @@
 }
 .ex-slide-wrap .ex-slide {
   width: 70%;
+  /* 드래그 영역 안잡힘! */
+  user-select: none;
 }
 
 .ex-slide .swiper-slide {
