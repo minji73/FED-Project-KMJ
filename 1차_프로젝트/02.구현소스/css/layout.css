@@ -4,7 +4,7 @@
 }
 /* header s */
 .header {
-    height: 276px;
+    height: calc(100vh - var(--footer-height));
 }
 .logo {
     width: 100%;
