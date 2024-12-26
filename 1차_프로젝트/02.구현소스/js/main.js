@@ -129,6 +129,7 @@ $(() => {
       } else {
         alert("Submit Success!");
         $popup2.removeClass("open");
+        $(".overlay").removeClass("on");
 
       }
   });
