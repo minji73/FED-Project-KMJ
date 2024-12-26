@@ -10,6 +10,7 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
+  top: -10px;
 }
 #main section {
   background-color: #fff;
