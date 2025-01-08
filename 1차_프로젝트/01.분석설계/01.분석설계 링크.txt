@@ -1,0 +1,77 @@
+빵가게
+https://und-ny.com/
+도토리 포스터
+https://dotoriposter.com/
+그냥 예쁨 1
+https://www.redis.agency/
+현대카드몰
+https://mpointmall.hyundaicard.com/main.do
+대림미술관
+https://www.daelimmuseum.org/
+그라운드시소
+https://groundseesaw.co.kr/
+엘르
+https://www.elle.co.kr/
+사원갤러리
+https://www.saweol.com/
+주제(아트플랫폼)
+https://printbakery.com/product/list.html?cate_no=298
+주제(리빙)
+https://www.noblessemall.com/
+
+
+
+
+텍스트로고 움직임
+https://harryjatkins.com/
+디자인스튜디오
+https://www.loketdesign.com/
+인터페이스 디자인 스튜디오
+https://www.oscarpico.es/
+처음 로딩화면
+https://broedutrecht.nl/
+갤러리
+https://www.artgalleryofballarat.com.au
+가구
+https://ohm.studio/
+
+
+
+주제: 아트플랫폼 사이트_프린트 베이커리
+https://printbakery.com/product/list.html?cate_no=298
+
+
+
+디자인참고 사이트
+
+1)전체적인 디자인참고할 사이트
+https://www.artgalleryofballarat.com.au/
+-메인화면 이미지 배치
+-홈화면 이미지 터치시 이미지설명나옴
+-스크롤 다운시 특정구간 전체 색 변경
+-터치시 카드 움직임
+
+기타 참고하고 싶은 사이트
+2)https://harryjatkins.com/
+-스크롤 다운시 상단텍스트 작아짐, 글씨 터치시 보임
+
+2)https://www.oscarpico.es/
+-스크롤다운시 이미지 물방울 처럼 움직임
+-설명창 이미지와 텍스트 레이아웃참고
+
+
+
+
+설계
+작품소개, 현재 전시정보
+
+메인페이지 마우스 오버시 라운드처리, 약간 위로 무빙, 사진 단색배경으로 변경되고 
+텍스트(작품명, 작가명)나옴
+클릭시 텍스트 확대 후 아래로 떨어지는 효과 데스크탑 하단으로 이동  동시에 아래에서 이미지 나옴 
+
+
+포트폴리오 만들때 참고할만한 사이트
+https://bruut.media/work/
+
+여행사이트
+https://travelnextlvl.de/en
