@@ -2,7 +2,10 @@
 @import url(./reset.css);
 @import url(./layout.css);
 @import url(./art.css);
-@import url(https://db.onlinewebfonts.com/c/74fc282ac1937b053f409b3b70eb1bb6?family=Helvetica+Ultra+Compressed);
+@font-face {
+  font-family: "Helvetica Ultra Compressed";
+  src: url('../font/Helvetica\ Ultra\ Compressed.otf');
+}
 .wrapper {
   padding-bottom: var(--footer-height);
 }
