@@ -13,7 +13,6 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
-  top: -10px;
 }
 #main section {
   background-color: #fff;
@@ -426,6 +425,7 @@ body.apricot #main section {
 .popup1 .right h4 {
   margin-bottom: 1rem;
 }
+
 /* popup 1 e */
 
 /* popup2 s */

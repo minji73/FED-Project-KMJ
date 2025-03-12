@@ -95,9 +95,38 @@ $(() => {
     $popup1.removeClass("open");
     $(".overlay").removeClass("on");
     $("body").css({overflow: "visible"});
+    
   });
-
-
+  $(document).ready(function() {
+    // 버튼 클릭 시 텍스트와 SVG 변경
+    $(".hang-button button").click(function() {
+      const $span = $(this).find("span");  // 버튼 내 span 요소를 찾습니다.
+      const $svg = $(this).find("svg");   // 버튼 내 svg 요소를 찾습니다.
+      
+      // 텍스트가 "Hang it!"이면 "Text Changed!"로 변경, 아니면 원래대로
+      if ($span.text() === "Hang it!") {
+        $span.text("Thank you!"); // 텍스트 변경
+  
+        // thumb.svg 파일을 동적으로 불러오기
+        fetch('./img/thumb.svg')
+          .then(response => response.text())  // SVG 파일 내용을 텍스트로 읽어옵니다.
+          .then(svgContent => {
+            $svg.html(svgContent);  // SVG 내용을 버튼 내 SVG로 교체
+          })
+          .catch(error => {
+            console.error('SVG 파일 로드 실패:', error);
+          });
+      } else {
+        $span.text("Hang it!"); // 원래 텍스트로 되돌림
+  
+        // 원래의 SVG로 되돌리기
+        $svg.html(`
+          <circle cx="21.5" cy="21" r="21" fill="black"></circle>
+          <path d="M28.0697 15L30.5 17.3995L20.7861 27L13.5 19.7991L15.9279 17.3995L20.7861 22.2009L28.0697 15Z" fill="white"></path>
+        `); // 원래의 SVG 아이콘으로 되돌리기
+      }
+    });
+  });
   // 팝업2
   // 1. 대상선정
   // .popup1, .popup1 .close, .card-list>li
