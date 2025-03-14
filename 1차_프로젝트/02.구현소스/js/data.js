@@ -6,144 +6,169 @@ const artData = [
     desc: "Gispen 2205 Chair",
     bgColor: "#d34640",
     attr: "art1.html",
+    image: "./img/art1.png" 
   },
   {
     idx: 2,
     title: "Min Suyeon",
     desc: "Vacation 1, 2023",
     bgColor: "#5390ae",
+    image: "./img/art2.png"
   },
   {
     idx: 3,
     title: "Yeye",
     desc: "Life in 4 Frames",
     bgColor: "#1a9388",
+    image: "./img/art3.png"
   },
   {
     idx: 4,
     title: "David Shrigley",
     desc: "Be nice",
     bgColor: "#e1a800",
+    image: "./img/art4.png"
   },
   {
     idx: 5,
     title: "David Shrigley",
     desc: "Curious Foot",
     bgColor: "#c09783",
+    image: "./img/art5.png"
   },
   {
     idx: 6,
     title: "Erwin Wurm",
     desc: "Shine",
     bgColor: "#6dd8f4",
+    image: "./img/art6.png"
   },
   {
     idx: 7,
     title: "Kyne",
     desc: "Untitled : N, 2021",
     bgColor: "#847449",
+    image: "./img/art7.png"
   },
   {
     idx: 8,
     title: "David Shrigley",
     desc: "shit",
-    bgColor: "#86003e", 
+    bgColor: "#86003e",
+    image: "./img/art8.png" 
   },
   {
     idx: 9,
     title: "Choi Yunjung",
     desc: "oneday 76, 2023",
     bgColor: "#f6bc7c",
+    image: "./img/art9.png"
   },
   {
     idx: 10,
     title: "David Gerstein",
     desc: "Dutch Bouquet",
     bgColor: "#b00700",
+    image: "./img/art10.png"
   },
   {
     idx: 11,
     title: "Lee Wooyoun",
     desc: "Hi-five of butterfly, 2023",
     bgColor: "#6798c7",
+    image: "./img/art11.png"
+
   },
   {
     idx: 12,
     title: "Haydonna",
     desc: "Duh",
     bgColor: "#000000",
+    image: "./img/art12.png"
   },
   {
     idx: 13,
     title: "Min Suyeon",
     desc: "5월의 고속터미널역, 2022",
     bgColor: "#6db1da",
+    image: "./img/art13.png"
   },
   {
     idx: 14,
     title: "Pulrim",
     desc: "Wild flower series, 2022",
     bgColor: "#dc4819",
+    image: "./img/art14.png"
   },
   {
     idx: 15,
     title: "Kim Tschangyeul",
     desc: "물방울 3",
     bgColor: "#83724c",
+    image: "./img/art15.png"
   },
   {
     idx: 16,
     title: "Greta Frieden",
     desc: "SAN FRANCISCO",
     bgColor: "#0037cc",
+    image: "./img/art16.png"
   },
   {
     idx: 17,
     title: "Woo Inyoung",
     desc: "Blooming-Everything, P2204, 2022",
     bgColor: "#c0dd13",
+    image: "./img/art17.png"
   },
   {
     idx: 18,
     title: "David Shrigley",
     desc: "Look at this",
     bgColor: "#f5002f",
+    image: "./img/art18.png"
   },
   {
     idx: 19,
     title: "Lee Wooyoun",
     desc: "Cake, 2024",
     bgColor: "#e07192",
+    image: "./img/art19.png"
   },
   {
     idx: 20,
     title: "Yoo Youngkuk",
     desc: "Mountain 1973",
     bgColor: "#013614",
+    image: "./img/art20.png"
   },
   {
     idx: 21,
     title: "Kim Bohie",
     desc: "Towards",
     bgColor: "#40b068",
+    image: "./img/art21.png"
   },
   {
     idx: 22,
     title: "Yoo Youngkuk",
     desc: "Four seasons",
     bgColor: "#5f5472",
+    image: "./img/art22.png"
   },
   {
     idx: 23,
     title: "David Gerstein",
     desc: "QUEENS OF THE SKY",
     bgColor: "#f0b3ce",
+    image: "./img/art23.png"
   },
   {
     idx: 24,
     title: "Moon Hyeongtae",
     desc: "Mask Dance",
     bgColor: "#290200",
+    image: "./img/art24.png"
   },
 ];
 

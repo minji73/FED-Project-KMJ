@@ -44,7 +44,7 @@ $(() => {
       const $target = entry.target;
       // 화면에 노출 상태에 따라 해당 엘리먼트의 class를 컨트롤 합니다.
       if (entry.isIntersecting) {
-        setTimeout(function(){
+        setTimeout(function () {
           $target.classList.add("on");
         }, 1000);
       } else {
@@ -69,15 +69,13 @@ $(() => {
   const $card = $(".card-list>li"); // 카드 (열기)
   const $pop1Close = $(".close"); // 닫기버튼 (닫기)
 
-  
-
   // 2. 이벤트
-  $card.click(function(){
+  $card.click(function () {
     // 클릭했을 때 실행될 코드
     $popup1.addClass("open");
     let idx = $(this).index();
     console.log(idx);
-    
+
     $(".popup1 .artist").text(voteData[idx].artist);
     $(".popup1 .name").text(voteData[idx].name);
     $(".popup1 .size").text(voteData[idx].size);
@@ -85,40 +83,46 @@ $(() => {
     $(".popup1 .material").text(voteData[idx].material);
     $(".popup1 .edition").text(voteData[idx].edition);
     $(".popup1 .explain").text(voteData[idx].explain);
-    $(".popup1 .img>img").attr("src", `./img/vote${idx+1}.png`); 
-    $(".overlay").addClass("on").click(()=>{$pop1Close.trigger('click')});
-    $("body").css({overflow: "hidden"});
+    $(".popup1 .img>img").attr("src", `./img/vote${idx + 1}.png`);
+    $(".overlay")
+      .addClass("on")
+      .click(() => {
+        $pop1Close.trigger("click");
+      });
+    // 팝업이 열릴 때마다 팝업 내부 스크롤을 맨 위로 이동
+    $(".popup1").scrollTop(0); // 팝업 내부의 스크롤을 맨 위로
+
+    $("body").css({ overflow: "hidden" });
   });
 
-  $pop1Close.click(function(){
+  $pop1Close.click(function () {
     // 클릭했을 때 실행될 코드
     $popup1.removeClass("open");
     $(".overlay").removeClass("on");
-    $("body").css({overflow: "visible"});
-    
+    $("body").css({ overflow: "visible" });
   });
-  $(document).ready(function() {
+  $(document).ready(function () {
     // 버튼 클릭 시 텍스트와 SVG 변경
-    $(".hang-button button").click(function() {
-      const $span = $(this).find("span");  // 버튼 내 span 요소를 찾습니다.
-      const $svg = $(this).find("svg");   // 버튼 내 svg 요소를 찾습니다.
-      
-      // 텍스트가 "Hang it!"이면 "Text Changed!"로 변경, 아니면 원래대로
+    $(".hang-button button").click(function () {
+      const $span = $(this).find("span"); // 버튼 내 span 요소를 찾습니다.
+      const $svg = $(this).find("svg"); // 버튼 내 svg 요소를 찾습니다.
+
+      // 텍스트 변경
       if ($span.text() === "Hang it!") {
         $span.text("Thank you!"); // 텍스트 변경
-  
+
         // thumb.svg 파일을 동적으로 불러오기
-        fetch('./img/thumb.svg')
-          .then(response => response.text())  // SVG 파일 내용을 텍스트로 읽어옵니다.
-          .then(svgContent => {
-            $svg.html(svgContent);  // SVG 내용을 버튼 내 SVG로 교체
+        fetch("./img/thumb.svg")
+          .then((response) => response.text()) // SVG 파일 내용을 텍스트로 읽어옵니다.
+          .then((svgContent) => {
+            $svg.html(svgContent); // SVG 내용을 버튼 내 SVG로 교체
           })
-          .catch(error => {
-            console.error('SVG 파일 로드 실패:', error);
+          .catch((error) => {
+            console.error("SVG 파일 로드 실패:", error);
           });
       } else {
         $span.text("Hang it!"); // 원래 텍스트로 되돌림
-  
+
         // 원래의 SVG로 되돌리기
         $svg.html(`
           <circle cx="21.5" cy="21" r="21" fill="black"></circle>
@@ -127,6 +131,7 @@ $(() => {
       }
     });
   });
+
   // 팝업2
   // 1. 대상선정
   // .popup1, .popup1 .close, .card-list>li
@@ -135,15 +140,19 @@ $(() => {
   const $popup2 = $(".popup2"); // 팝업
   const $newletter = $(".newsletter"); // 카드 (열기)
   const $pop2Close = $(".popup2 .close");
-  
-  $newletter.click(function(){
+
+  $newletter.click(function () {
     // 클릭했을 때 실행될 코드
     $popup2.addClass("open");
-    $(".overlay").addClass("on").click(()=>{$pop1Close.trigger('click')});
-    $("body").css({overflow: "hidden"});
+    $(".overlay")
+      .addClass("on")
+      .click(() => {
+        $pop1Close.trigger("click");
+      });
+    $("body").css({ overflow: "hidden" });
   });
 
-  $pop2Close.click(function(){
+  $pop2Close.click(function () {
     // 클릭했을 때 실행될 코드
     $popup2.removeClass("open");
   });
@@ -152,14 +161,13 @@ $(() => {
     let $firstName = $("#firstName").val(),
       $lastName = $("#lastName").val(),
       $email = $("#email").val();
-    
-      if($firstName == "" || $lastName == "" || $email == "") {
-        alert("Please fill out the fields")
-      } else {
-        alert("Submit Success!");
-        $popup2.removeClass("open");
-        $(".overlay").removeClass("on");
 
-      }
+    if ($firstName == "" || $lastName == "" || $email == "") {
+      alert("Please fill out the fields");
+    } else {
+      alert("Submit Success!");
+      $popup2.removeClass("open");
+      $(".overlay").removeClass("on");
+    }
   });
 });
