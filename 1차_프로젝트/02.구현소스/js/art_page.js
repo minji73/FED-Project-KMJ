@@ -1,12 +1,27 @@
 import { artData } from "./data.js";
 
-$('.contents').html(
-     `
+// 파라미터값
+const pm = Number(location.search.split("=")[1]);
+
+// 선택 데이터
+const selData = artData.find((v) => v.idx === pm);
+console.log(pm, selData);
+
+const range = [18, 23, 24, 17];
+
+$(".contents").html(
+  `
         <div class="art-box">
-          <h2>Gispen 2205 Chair<br />ABAN</h2>
+          <h2>${selData.desc}<br />${selData.title}</h2>
         </div>
         <div class="art-wrap">
-          <img src="./img/art1.png" alt="art1" />
+          <img src="${selData.image}" alt="art1" ${
+    range.includes(pm)
+      ? "style='height:600px;'"
+      : pm === 13
+      ? "style='max-width:50%;height:300px;'"
+      : ""
+  } />
           <div class="discrip">
             <h2>Artwork Description</h2>
             <br /><br />
@@ -23,17 +38,7 @@ $('.contents').html(
               </p>
               <br />
               <p>
-                What stories do the chairs in Avang's paintings hold? The "Chair
-                Collection" art poster series is a collaboration between Print
-                Bakery and the artist Avang. Avang's "Chair Collection" series
-                captures the essence of "chairs," which convey comfort in
-                everyday life, through the artist's perspective. The series,
-                limited to only 100 copies, holds collectible value and is an
-                excellent way to change the atmosphere of a room with a subtle
-                shift. "The chair, as a medium to enjoy one's imagination in
-                ultimate comfort. I hope the warmth of objects, like the chair,
-                will bring to mind each person’s own warm moments." Avang, from
-                the artist’s note -
+                ${selData.imageDesc}
               </p>
             </div>
           </div>
