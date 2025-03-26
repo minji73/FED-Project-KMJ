@@ -6,7 +6,7 @@ $('.contents').html(
           <h2>Gispen 2205 Chair<br />ABAN</h2>
         </div>
         <div class="art-wrap">
-          <img src="${artData.image}" alt="art1" />
+          <img src="./img/art1.png" alt="art1" />
           <div class="discrip">
             <h2>Artwork Description</h2>
             <br /><br />
