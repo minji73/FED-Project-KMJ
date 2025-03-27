@@ -7,7 +7,7 @@ const pm = Number(location.search.split("=")[1]);
 const selData = artData.find((v) => v.idx === pm);
 console.log(pm, selData);
 
-const range = [18, 23, 24, 17];
+const range = [18, 23, 24, 17, 21, 20, 14];
 
 $(".contents").html(
   `

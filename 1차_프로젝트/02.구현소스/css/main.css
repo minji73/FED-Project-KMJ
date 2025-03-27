@@ -250,15 +250,6 @@
   justify-content: space-between;
   align-items: baseline;
 }
-.title-area .link {
-  text-decoration: underline;
-  transition: color 0.3s;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.title-area .link:hover {
-  color: red;
-}
 .title-area h3 {
   font-size: 170px;
   font-weight: 500;
